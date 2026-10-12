@@ -23,3 +23,10 @@
 /_Hosts/Tryouts.EmbAIInService.WebAPIServices/obj
 /Adapters/Tryouts.EmbAIInService.DatabaseService/bin/Debug/net10.0
 /.gitattributes
+/Adapters/Tryouts.EmbAIInService.DatabaseService/obj/Debug/net10.0/ref/Tryouts.EmbAIInService.RAGServices.dll
+/Adapters/Tryouts.EmbAIInService.DatabaseService/obj/Debug/net10.0/refint/Tryouts.EmbAIInService.RAGServices.dll
+/Adapters/Tryouts.EmbAIInService.DatabaseService/obj/Debug/net10.0/Tryouts.EmbAIInService.RAGServices.AssemblyInfoInputs.cache
+/Adapters/Tryouts.EmbAIInService.DatabaseService/obj/Debug/net10.0/Tryouts.EmbAIInService.RAGServices.csproj.AssemblyReference.cache
+/Adapters/Tryouts.EmbAIInService.DatabaseService/obj/Debug/net10.0/Tryouts.EmbAIInService.RAGServices.dll
+/Adapters/Tryouts.EmbAIInService.DatabaseService/obj/Debug/net10.0/Tryouts.EmbAIInService.RAGServices.pdb
+/Adapters/Tryouts.EmbAIInService.DatabaseService/obj/Debug/net10.0/Tryouts.EmbAIInService.RAGServices.sourcelink.json
