@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tryouts.EmbAIInService.RAGServices")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81a42936a8ca99f9d2e6613f9441f1cdf967c8a7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24cf325e67438467ac893bd6310ca2ef68cb58e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tryouts.EmbAIInService.RAGServices")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tryouts.EmbAIInService.RAGServices")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
