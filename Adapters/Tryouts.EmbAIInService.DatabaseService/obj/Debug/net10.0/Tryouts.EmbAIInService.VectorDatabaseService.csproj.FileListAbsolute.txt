@@ -1,0 +1,14 @@
+D:\Vijayendra\ProfessionalProjTryouts\Tryouts.EmbAIInService\Adapters\Tryouts.EmbAIInService.DatabaseService\bin\Debug\net10.0\Tryouts.EmbAIInService.VectorDatabaseService.deps.json
+D:\Vijayendra\ProfessionalProjTryouts\Tryouts.EmbAIInService\Adapters\Tryouts.EmbAIInService.DatabaseService\bin\Debug\net10.0\Tryouts.EmbAIInService.VectorDatabaseService.dll
+D:\Vijayendra\ProfessionalProjTryouts\Tryouts.EmbAIInService\Adapters\Tryouts.EmbAIInService.DatabaseService\bin\Debug\net10.0\Tryouts.EmbAIInService.VectorDatabaseService.pdb
+D:\Vijayendra\ProfessionalProjTryouts\Tryouts.EmbAIInService\Adapters\Tryouts.EmbAIInService.DatabaseService\obj\Debug\net10.0\Tryouts.EmbAIInService.VectorDatabaseService.csproj.AssemblyReference.cache
+D:\Vijayendra\ProfessionalProjTryouts\Tryouts.EmbAIInService\Adapters\Tryouts.EmbAIInService.DatabaseService\obj\Debug\net10.0\Tryouts.EmbAIInService.VectorDatabaseService.GeneratedMSBuildEditorConfig.editorconfig
+D:\Vijayendra\ProfessionalProjTryouts\Tryouts.EmbAIInService\Adapters\Tryouts.EmbAIInService.DatabaseService\obj\Debug\net10.0\Tryouts.EmbAIInService.VectorDatabaseService.AssemblyInfoInputs.cache
+D:\Vijayendra\ProfessionalProjTryouts\Tryouts.EmbAIInService\Adapters\Tryouts.EmbAIInService.DatabaseService\obj\Debug\net10.0\Tryouts.EmbAIInService.VectorDatabaseService.AssemblyInfo.cs
+D:\Vijayendra\ProfessionalProjTryouts\Tryouts.EmbAIInService\Adapters\Tryouts.EmbAIInService.DatabaseService\obj\Debug\net10.0\Tryouts.EmbAIInService.VectorDatabaseService.csproj.CoreCompileInputs.cache
+D:\Vijayendra\ProfessionalProjTryouts\Tryouts.EmbAIInService\Adapters\Tryouts.EmbAIInService.DatabaseService\obj\Debug\net10.0\Tryouts.EmbAIInService.VectorDatabaseService.sourcelink.json
+D:\Vijayendra\ProfessionalProjTryouts\Tryouts.EmbAIInService\Adapters\Tryouts.EmbAIInService.DatabaseService\obj\Debug\net10.0\Tryouts.EmbAIInService.VectorDatabaseService.dll
+D:\Vijayendra\ProfessionalProjTryouts\Tryouts.EmbAIInService\Adapters\Tryouts.EmbAIInService.DatabaseService\obj\Debug\net10.0\refint\Tryouts.EmbAIInService.VectorDatabaseService.dll
+D:\Vijayendra\ProfessionalProjTryouts\Tryouts.EmbAIInService\Adapters\Tryouts.EmbAIInService.DatabaseService\obj\Debug\net10.0\Tryouts.EmbAIInService.VectorDatabaseService.pdb
+D:\Vijayendra\ProfessionalProjTryouts\Tryouts.EmbAIInService\Adapters\Tryouts.EmbAIInService.DatabaseService\obj\Debug\net10.0\ref\Tryouts.EmbAIInService.VectorDatabaseService.dll
+D:\Vijayendra\ProfessionalProjTryouts\Tryouts.EmbAIInService\Adapters\Tryouts.EmbAIInService.DatabaseService\obj\Debug\net10.0\Tryouts..8F1B6222.Up2Date

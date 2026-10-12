@@ -1,0 +1,25 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Adapters/Tryouts.EmbAIInService.AIDataAccess/bin/Debug/net10.0
+/Adapters/Tryouts.EmbAIInService.AIDataAccess/obj
+/.vs/ProjectEvaluation
+/.vs/Tryouts.EmbAIInService.slnx/DesignTimeBuild
+/.vs/Tryouts.EmbAIInService.slnx/FileContentIndex
+/.vs/Tryouts.EmbAIInService.slnx/v18
+/Applications/AppServices/Tryouts.EmbAIInService.BusinessServices/bin/Debug/net10.0
+/Applications/AppServices/Tryouts.EmbAIInService.BusinessServices/obj
+/Applications/Models/Tryouts.EmbAIInService.Models/bin/Debug/net10.0
+/Applications/Models/Tryouts.EmbAIInService.Models/obj/Debug/net10.0
+/Applications/Models/Tryouts.EmbAIInService.Models/obj
+/Applications/Ports/Tryouts.EmbAIInService.Interfaces/bin/Debug/net10.0
+/Applications/Ports/Tryouts.EmbAIInService.Interfaces/obj
+/Tests/Tryouts.EmbAIInService.IntegrationTests/bin/Debug/net10.0
+/Tests/Tryouts.EmbAIInService.IntegrationTests/obj
+/Tests/Tryouts.EmbAIInService.UnitTests/bin/Debug/net10.0
+/Tests/Tryouts.EmbAIInService.UnitTests/obj
+/_Hosts/Tryouts.EmbAIInService.WebAPIServices/bin/Debug/net10.0
+/_Hosts/Tryouts.EmbAIInService.WebAPIServices/obj
+/Adapters/Tryouts.EmbAIInService.DatabaseService/bin/Debug/net10.0
+/.gitattributes
