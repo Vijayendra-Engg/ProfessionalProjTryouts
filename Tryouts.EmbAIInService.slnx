@@ -1,0 +1,26 @@
+<Solution>
+  <Folder Name="/Adapters/">
+    <Project Path="Adapters/Tryouts.EmbAIInService.AIDataAccess/Tryouts.EmbAIInService.AIServices.csproj" />
+    <Project Path="Adapters/Tryouts.EmbAIInService.DatabaseService/Tryouts.EmbAIInService.RAGServices.csproj" />
+  </Folder>
+  <Folder Name="/Applications/" />
+  <Folder Name="/Applications/AppServices/">
+    <Project Path="Applications/AppServices/Tryouts.EmbAIInService.BusinessServices/Tryouts.EmbAIInService.BusinessServices.csproj" />
+  </Folder>
+  <Folder Name="/Applications/Models/">
+    <Project Path="Applications/Models/Tryouts.EmbAIInService.Models/Tryouts.EmbAIInService.Models.csproj" />
+  </Folder>
+  <Folder Name="/Applications/Ports/">
+    <Project Path="Applications/Ports/Tryouts.EmbAIInService.Interfaces/Tryouts.EmbAIInService.Interfaces.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/Tryouts.EmbAIInService.IntegrationTests/Tryouts.EmbAIInService.IntegrationTests.csproj" />
+    <Project Path="Tests/Tryouts.EmbAIInService.UnitTests/Tryouts.EmbAIInService.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/_Hosts/">
+    <Project Path="_Hosts/Tryouts.EmbAIInService.WebAPIServices/Tryouts.EmbAIInService.WebAPIServices.csproj" />
+  </Folder>
+</Solution>

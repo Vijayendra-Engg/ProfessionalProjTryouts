@@ -1,0 +1,6 @@
+@Tryouts.EmbAIInService.WebAPIServices_HostAddress = http://localhost:5208
+
+GET {{Tryouts.EmbAIInService.WebAPIServices_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

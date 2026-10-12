@@ -1,0 +1,52 @@
+version: '3.9'
+
+services:
+  postgres17:
+    image: postgres:17.11
+    container_name: pg17
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: PSQLDBAdmin@123
+      POSTGRES_DB: tryout_vector_db
+    ports:
+      - "5433:5433"
+    volumes:
+      - pg17data:/var/lib/postgresql/data
+    networks:
+      - pgnet
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@local.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    networks:
+      - pgnet
+
+  pgbouncer:
+    image: edoburu/pgbouncer:latest
+    container_name: pgbouncer
+    restart: always
+    environment:
+      DB_USER: postgres
+      DB_PASSWORD: PSQLDBAdmin@123
+      DB_HOST: postgres17
+      DB_PORT: 5433
+      POOL_MODE: transaction
+      MAX_CLIENT_CONN: 100
+      DEFAULT_POOL_SIZE: 20
+    ports:
+      - "6433:6433"
+    networks:
+      - pgnet
+
+volumes:
+  pg17data:
+
+networks:
+  pgnet:
