@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/Adapters/">
+    <Project Path="Adapters/Tryouts.GraphDatabase.DataAccess/Tryouts.GraphDatabase.DataAccess.csproj" />
+  </Folder>
+  <Folder Name="/Applications/" />
+  <Folder Name="/Applications/Interfaces/">
+    <Project Path="Applications/Interfaces/Tryouts.GraphDatabase.Interfaces/Tryouts.GraphDatabase.Interfaces.csproj" />
+  </Folder>
+  <Folder Name="/Applications/Models/" />
+  <Folder Name="/Tests/">
+    <Project Path="Tests/Tryouts.GraphDatabase.IntegrationTests/Tryouts.GraphDatabase.IntegrationTests.csproj" />
+    <Project Path="Tests/Tryouts.GraphDatabase.UnitTests/Tryouts.GraphDatabase.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/_Hosts/" />
+</Solution>
