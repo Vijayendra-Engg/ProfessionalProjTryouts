@@ -1,0 +1,78 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# NuGet Packages
+*.nupkg
+# NuGet Symbol Packages
+*.snupkg
+
+# Others
+~$*
+*~
+CodeCoverage/
+
+# MSBuild Binary and Structured Log
+*.binlog
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+/.vs
+/Adapters/Tryouts.EmbAIInService.AIDataAccess/bin/Debug/net10.0
+/Adapters/Tryouts.EmbAIInService.AIDataAccess/obj
+/.vs/ProjectEvaluation
+/.vs/Tryouts.EmbAIInService.slnx/DesignTimeBuild
+/.vs/Tryouts.EmbAIInService.slnx/FileContentIndex
+/.vs/Tryouts.EmbAIInService.slnx/v18
+/Applications/AppServices/Tryouts.EmbAIInService.BusinessServices/bin/Debug/net10.0
+/Applications/AppServices/Tryouts.EmbAIInService.BusinessServices/obj
+/Applications/Models/Tryouts.EmbAIInService.Models/bin/Debug/net10.0
+/Applications/Models/Tryouts.EmbAIInService.Models/obj/Debug/net10.0
+/Applications/Models/Tryouts.EmbAIInService.Models/obj
+/Applications/Ports/Tryouts.EmbAIInService.Interfaces/bin/Debug/net10.0
+/Applications/Ports/Tryouts.EmbAIInService.Interfaces/obj
+/Tests/Tryouts.EmbAIInService.IntegrationTests/bin/Debug/net10.0
+/Tests/Tryouts.EmbAIInService.IntegrationTests/obj
+/Tests/Tryouts.EmbAIInService.UnitTests/bin/Debug/net10.0
+/Tests/Tryouts.EmbAIInService.UnitTests/obj
+/_Hosts/Tryouts.EmbAIInService.WebAPIServices/bin/Debug/net10.0
+/_Hosts/Tryouts.EmbAIInService.WebAPIServices/obj
+/Adapters/Tryouts.EmbAIInService.DatabaseService/bin/Debug/net10.0
+/.gitattributes
+/Adapters/Tryouts.EmbAIInService.DatabaseService/obj/Debug/net10.0/ref/Tryouts.EmbAIInService.RAGServices.dll
+/Adapters/Tryouts.EmbAIInService.DatabaseService/obj/Debug/net10.0/refint/Tryouts.EmbAIInService.RAGServices.dll
+/Adapters/Tryouts.EmbAIInService.DatabaseService/obj/Debug/net10.0/Tryouts.EmbAIInService.RAGServices.AssemblyInfoInputs.cache
+/Adapters/Tryouts.EmbAIInService.DatabaseService/obj/Debug/net10.0/Tryouts.EmbAIInService.RAGServices.csproj.AssemblyReference.cache
+/Adapters/Tryouts.EmbAIInService.DatabaseService/obj/Debug/net10.0/Tryouts.EmbAIInService.RAGServices.dll
+/Adapters/Tryouts.EmbAIInService.DatabaseService/obj/Debug/net10.0/Tryouts.EmbAIInService.RAGServices.pdb
+/Adapters/Tryouts.EmbAIInService.DatabaseService/obj/Debug/net10.0/Tryouts.EmbAIInService.RAGServices.sourcelink.json

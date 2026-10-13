@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/Adapters/">
+    <Project Path="Adapters/Tryouts.HuggingFaceRepo.DataAccess/Tryouts.HuggingFaceRepo.DataAccess.csproj" />
+  </Folder>
+  <Folder Name="/Application/" />
+  <Folder Name="/Application/Models/">
+    <Project Path="Application/Models/Tryouts.HuggingFaceRepo.Models/Tryouts.HuggingFaceRepo.Models.csproj" />
+  </Folder>
+  <Folder Name="/Application/Ports/">
+    <Project Path="Tryouts.HuggingFaceRepo.Interfaces/Tryouts.HuggingFaceRepo.Interfaces.csproj" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Tryouts.HuggingFaceRepo.IntegrationTests/Tryouts.HuggingFaceRepo.IntegrationTests.csproj" />
+  </Folder>
+  <Folder Name="/_Hosts/" />
+</Solution>
