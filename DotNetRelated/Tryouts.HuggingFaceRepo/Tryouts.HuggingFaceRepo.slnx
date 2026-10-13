@@ -12,5 +12,7 @@
   <Folder Name="/Tests/">
     <Project Path="Tryouts.HuggingFaceRepo.IntegrationTests/Tryouts.HuggingFaceRepo.IntegrationTests.csproj" />
   </Folder>
-  <Folder Name="/_Hosts/" />
+  <Folder Name="/_Hosts/">
+    <Project Path="_Hosts/Tryouts.HuggingFaceRepo.WebAPI/Tryouts.HuggingFaceRepo.WebAPI.csproj" Id="8e93f1a4-8cd0-43ad-8e8c-078e595f35f6" />
+  </Folder>
 </Solution>

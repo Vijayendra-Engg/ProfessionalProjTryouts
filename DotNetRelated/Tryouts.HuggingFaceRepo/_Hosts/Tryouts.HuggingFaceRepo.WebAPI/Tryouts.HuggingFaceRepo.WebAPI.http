@@ -1,0 +1,6 @@
+@Tryouts.HuggingFaceRepo.WebAPI_HostAddress = http://localhost:5197
+
+GET {{Tryouts.HuggingFaceRepo.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
