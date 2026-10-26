@@ -21,6 +21,12 @@
     "@angular/platform-browser": "^22.1.0",
     "@angular/router": "^22.1.0",
     "@duckdb/duckdb-wasm": "^1.33.1-dev57.0",
+    "@types/leaflet": "^1.9.22",
+    "ag-charts-angular": "^14.2.0",
+    "ag-charts-community": "^14.2.0",
+    "ag-grid-angular": "^36.2.0",
+    "ag-grid-community": "^36.2.0",
+    "leaflet": "^1.9.4",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },

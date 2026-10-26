@@ -1,0 +1,156 @@
+:host {
+  display: block;
+}
+
+.location-panel {
+  padding: 22px;
+}
+
+.map-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.map-toolbar h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.map-toolbar p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.location-button {
+  min-height: 40px;
+  flex: 0 0 auto;
+  border-radius: 9px;
+}
+
+.location-button .material-symbols-outlined {
+  margin-right: 6px;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.location-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 18px 0 12px;
+  color: #65718a;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.location-message--live {
+  color: var(--success);
+}
+
+.location-message .material-symbols-outlined {
+  flex: 0 0 auto;
+  font-size: 17px;
+}
+
+.map-canvas {
+  width: 100%;
+  height: 440px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #edf2f4;
+}
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+  padding: 16px 2px 12px;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #5c6880;
+  font-size: 0.74rem;
+}
+
+.legend-pin,
+.legend-radius {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+}
+
+.legend-pin--current {
+  border: 3px solid #fff;
+  background: #4169e1;
+  box-shadow: 0 0 0 2px #4169e1;
+}
+
+.legend-pin--nearby {
+  background: #20a678;
+}
+
+.legend-pin--outside {
+  background: #e98f38;
+}
+
+.legend-radius {
+  border: 1px solid #7791e8;
+  background: rgb(65 105 225 / 15%);
+}
+
+.site-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 28px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+  color: #526079;
+  font-size: 0.77rem;
+}
+
+.site-status {
+  color: #ad671c;
+  font-weight: 600;
+}
+
+.site-status--nearby {
+  color: var(--success);
+}
+
+@media (max-width: 650px) {
+  .location-panel {
+    padding: 17px;
+  }
+
+  .map-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .map-canvas {
+    height: 340px;
+  }
+
+  .site-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

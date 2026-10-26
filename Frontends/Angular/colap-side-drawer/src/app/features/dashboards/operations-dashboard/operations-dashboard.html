@@ -1,0 +1,61 @@
+<section class="page-content" aria-labelledby="operations-title">
+  <header class="page-heading">
+    <div>
+      <span class="eyebrow">Service and fulfillment</span>
+      <h1 id="operations-title">Operations dashboard</h1>
+      <p>Monitor location coverage and day-to-day fulfillment volume.</p>
+    </div>
+    <span class="sample-label">
+      <span class="material-symbols-outlined" aria-hidden="true">science</span>
+      Sample data
+    </span>
+  </header>
+
+  <div class="dashboard-grid">
+    <div class="kpi-grid">
+      <app-metric-card
+        label="Orders fulfilled"
+        value="1,284"
+        change="+6.4% vs last week"
+        icon="inventory_2"
+      />
+      <app-metric-card
+        label="On-time delivery"
+        value="96.8%"
+        change="+1.2 pts vs last week"
+        icon="local_shipping"
+      />
+      <app-metric-card
+        label="Active locations"
+        value="6"
+        change="Sample locations on this map"
+        icon="location_on"
+      />
+      <app-metric-card
+        label="Avg. fulfillment"
+        value="1.8 days"
+        change="-0.3 days vs last week"
+        icon="schedule"
+      />
+    </div>
+
+    <article class="panel span-12">
+      <app-location-map />
+    </article>
+
+    <article class="panel span-12">
+      <div class="panel-heading">
+        <div>
+          <h2>Daily order volume</h2>
+          <p>Fulfilled orders over the past week</p>
+        </div>
+      </div>
+      <div class="chart-body chart-body--short">
+        <app-bar-chart
+          label="Daily order volume bar chart"
+          [options]="volumeOptions"
+        />
+      </div>
+    </article>
+  </div>
+</section>

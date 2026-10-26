@@ -1,0 +1,21 @@
+.sample-label {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  gap: 7px;
+  padding: 0 11px;
+  border: 1px solid #f0e4cf;
+  border-radius: 20px;
+  background: #fff8e9;
+  color: #92631f;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.sample-label .material-symbols-outlined {
+  font-size: 17px;
+}
+
+.chart-body--short {
+  height: 250px;
+}

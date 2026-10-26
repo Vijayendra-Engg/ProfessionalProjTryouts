@@ -1,0 +1,22 @@
+<article class="metric-card">
+  <div class="metric-top">
+    <span class="metric-label">{{ label() }}</span>
+    <span class="metric-icon material-symbols-outlined" aria-hidden="true">
+      {{ icon() }}
+    </span>
+  </div>
+  <p class="metric-value">{{ value() }}</p>
+  <p class="metric-change">
+    <span
+      class="change-indicator"
+      [class.change-indicator--positive]="positive()"
+      [class.change-indicator--negative]="!positive()"
+      aria-hidden="true"
+    >
+      <span class="material-symbols-outlined">
+        {{ positive() ? 'trending_up' : 'trending_down' }}
+      </span>
+    </span>
+    <span>{{ change() }}</span>
+  </p>
+</article>

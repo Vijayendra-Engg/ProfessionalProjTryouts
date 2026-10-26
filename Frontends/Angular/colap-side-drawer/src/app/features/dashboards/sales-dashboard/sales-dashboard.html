@@ -1,0 +1,88 @@
+<section class="page-content" aria-labelledby="sales-title">
+  <header class="page-heading">
+    <div>
+      <span class="eyebrow">Commercial performance</span>
+      <h1 id="sales-title">Sales dashboard</h1>
+      <p>Track bookings, revenue momentum, and product performance.</p>
+    </div>
+    <span class="period-label">
+      <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+      Year to date
+    </span>
+  </header>
+
+  <div class="dashboard-grid">
+    <div class="kpi-grid">
+      <app-metric-card
+        label="Sales pipeline"
+        value="$1.24m"
+        change="+14.2% vs last quarter"
+        icon="account_tree"
+      />
+      <app-metric-card
+        label="Closed won"
+        value="$684k"
+        change="+9.6% vs last quarter"
+        icon="task_alt"
+      />
+      <app-metric-card
+        label="Win rate"
+        value="31.4%"
+        change="+2.1 pts vs last quarter"
+        icon="emoji_events"
+      />
+      <app-metric-card
+        label="Avg. deal size"
+        value="$18.2k"
+        change="-1.8% vs last quarter"
+        icon="request_quote"
+        [positive]="false"
+      />
+    </div>
+
+    <article class="panel span-7">
+      <div class="panel-heading">
+        <div>
+          <h2>Bookings vs. closed won</h2>
+          <p>Monthly opportunity volume</p>
+        </div>
+      </div>
+      <div class="chart-body">
+        <app-bar-chart
+          label="Monthly bookings compared with closed won bar chart"
+          [options]="performanceOptions"
+        />
+      </div>
+    </article>
+
+    <article class="panel span-5">
+      <div class="panel-heading">
+        <div>
+          <h2>Revenue momentum</h2>
+          <p>Weekly revenue, in thousands</p>
+        </div>
+      </div>
+      <div class="chart-body">
+        <app-line-chart
+          label="Weekly sales revenue area chart"
+          [options]="trendOptions"
+        />
+      </div>
+    </article>
+
+    <article class="panel span-12">
+      <div class="panel-heading">
+        <div>
+          <h2>Revenue by product</h2>
+          <p>Year-to-date revenue, in thousands</p>
+        </div>
+      </div>
+      <div class="chart-body chart-body--short">
+        <app-bar-chart
+          label="Year-to-date revenue by product bar chart"
+          [options]="productOptions"
+        />
+      </div>
+    </article>
+  </div>
+</section>
