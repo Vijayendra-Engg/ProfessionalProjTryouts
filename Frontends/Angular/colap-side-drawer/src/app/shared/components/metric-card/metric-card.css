@@ -1,0 +1,71 @@
+:host {
+  display: block;
+  min-width: 0;
+}
+
+.metric-card {
+  min-height: 144px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: var(--surface);
+  box-shadow: 0 3px 14px rgb(33 50 86 / 3%);
+}
+
+.metric-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.metric-label {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.metric-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-size: 19px;
+}
+
+.metric-value {
+  margin: 14px 0 8px;
+  font-size: clamp(1.45rem, 2.4vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.metric-change {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.74rem;
+}
+
+.change-indicator {
+  display: inline-flex;
+  align-items: center;
+}
+
+.change-indicator .material-symbols-outlined {
+  font-size: 16px;
+}
+
+.change-indicator--positive {
+  color: var(--success);
+}
+
+.change-indicator--negative {
+  color: #c34848;
+}

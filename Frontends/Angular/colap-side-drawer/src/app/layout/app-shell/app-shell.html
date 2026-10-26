@@ -1,0 +1,109 @@
+<mat-sidenav-container class="shell">
+  <mat-sidenav
+    class="sidebar"
+    [class.sidebar--collapsed]="collapsed()"
+    mode="side"
+    [opened]="true"
+    [attr.aria-label]="collapsed() ? 'Collapsed primary navigation' : 'Primary navigation'"
+  >
+    <a class="brand" routerLink="/dashboard" aria-label="Northstar overview">
+      <span class="brand-mark" aria-hidden="true">N</span>
+      @if (!collapsed()) {
+        <span class="brand-name">northstar</span>
+      }
+    </a>
+
+    <span class="nav-caption">
+      @if (!collapsed()) {
+        <span>Workspace</span>
+      } @else {
+        <span class="sr-only">Workspace navigation</span>
+      }
+    </span>
+
+    <nav id="primary-navigation" class="nav-list" aria-label="Dashboards">
+      <a
+        class="nav-link"
+        routerLink="/dashboard"
+        routerLinkActive="nav-link--active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        ariaCurrentWhenActive="page"
+        aria-label="Overview dashboard"
+        title="Overview"
+      >
+        <span class="material-symbols-outlined" aria-hidden="true">space_dashboard</span>
+        @if (!collapsed()) {
+          <span>Overview</span>
+        }
+      </a>
+      <a
+        class="nav-link"
+        routerLink="/dashboard/sales"
+        routerLinkActive="nav-link--active"
+        ariaCurrentWhenActive="page"
+        aria-label="Sales dashboard"
+        title="Sales"
+      >
+        <span class="material-symbols-outlined" aria-hidden="true">monitoring</span>
+        @if (!collapsed()) {
+          <span>Sales</span>
+        }
+      </a>
+      <a
+        class="nav-link"
+        routerLink="/dashboard/operations"
+        routerLinkActive="nav-link--active"
+        ariaCurrentWhenActive="page"
+        aria-label="Operations dashboard"
+        title="Operations"
+      >
+        <span class="material-symbols-outlined" aria-hidden="true">map</span>
+        @if (!collapsed()) {
+          <span>Operations &amp; locations</span>
+        }
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <span class="status-dot" aria-hidden="true"></span>
+      @if (!collapsed()) {
+        <span>All systems operational</span>
+      }
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="main-content">
+    <mat-toolbar class="topbar">
+      <button
+        mat-icon-button
+        type="button"
+        class="navigation-toggle"
+        (click)="toggleNavigation()"
+        [attr.aria-expanded]="!collapsed()"
+        aria-controls="primary-navigation"
+        [attr.aria-label]="collapsed() ? 'Expand navigation' : 'Collapse navigation'"
+      >
+        <span class="material-symbols-outlined" aria-hidden="true">
+          {{ collapsed() ? 'left_panel_open' : 'left_panel_close' }}
+        </span>
+      </button>
+      <div class="topbar-title">
+        <span class="topbar-kicker">Northstar</span>
+        <span class="topbar-heading">Business intelligence</span>
+      </div>
+      <div class="topbar-spacer"></div>
+      <span class="update-status">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>Sample workspace data</span>
+      </span>
+      <div class="profile" aria-label="Workspace profile">
+        <span class="profile-avatar" aria-hidden="true">NS</span>
+        <span class="profile-name">Workspace</span>
+      </div>
+    </mat-toolbar>
+
+    <main id="main-content" class="route-content" tabindex="-1">
+      <router-outlet />
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

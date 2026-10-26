@@ -1,0 +1,287 @@
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.shell {
+  min-height: 100vh;
+  background: var(--app-bg);
+}
+
+.sidebar {
+  width: 252px;
+  padding: 24px 16px 18px;
+  border: 0;
+  border-right: 1px solid var(--line);
+  background: var(--surface);
+  transition: width 180ms ease;
+}
+
+.sidebar--collapsed {
+  width: 76px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  height: 38px;
+  margin: 0 8px 42px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.brand-mark,
+.profile-avatar {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 700;
+}
+
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  font-size: 1.05rem;
+}
+
+.brand-name {
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.nav-caption {
+  display: block;
+  min-height: 26px;
+  padding: 0 12px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  display: grid;
+  gap: 6px;
+}
+
+.nav-link {
+  display: flex;
+  min-height: 46px;
+  align-items: center;
+  gap: 13px;
+  padding: 0 12px;
+  border-radius: 11px;
+  color: #5e6a80;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 140ms ease, color 140ms ease;
+}
+
+.sidebar--collapsed .nav-link {
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  background: #f4f6fb;
+  color: var(--ink);
+}
+
+.nav-link:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.nav-link--active {
+  background: var(--brand-soft);
+  color: #3658c9;
+}
+
+.nav-link .material-symbols-outlined {
+  font-size: 21px;
+}
+
+.sidebar-footer {
+  position: absolute;
+  right: 16px;
+  bottom: 20px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.sidebar--collapsed .sidebar-footer {
+  justify-content: center;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #28a875;
+  box-shadow: 0 0 0 3px rgb(40 168 117 / 12%);
+}
+
+.main-content {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.topbar {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  height: 76px;
+  gap: 15px;
+  padding: 0 clamp(20px, 4vw, 52px);
+  border-bottom: 1px solid var(--line);
+  background: rgb(255 255 255 / 94%);
+  color: var(--ink);
+  backdrop-filter: blur(12px);
+}
+
+.navigation-toggle {
+  color: #65718a;
+}
+
+.topbar-title {
+  display: grid;
+  gap: 1px;
+}
+
+.topbar-kicker {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.topbar-heading {
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.topbar-spacer {
+  flex: 1;
+}
+
+.update-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #56637a;
+  font-size: 0.77rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 12px;
+  padding-left: 18px;
+  border-left: 1px solid var(--line);
+}
+
+.profile-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #e7eaff;
+  color: #435dca;
+  font-size: 0.7rem;
+}
+
+.profile-name {
+  color: #48556d;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.route-content {
+  min-height: calc(100vh - 76px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sidebar,
+  .nav-link {
+    transition: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .sidebar {
+    width: 76px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .sidebar:not(.sidebar--collapsed) {
+    width: 210px;
+  }
+
+  .brand {
+    justify-content: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .sidebar:not(.sidebar--collapsed) .brand {
+    justify-content: flex-start;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  .nav-link {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .sidebar:not(.sidebar--collapsed) .nav-link {
+    justify-content: flex-start;
+    padding: 0 12px;
+  }
+
+  .sidebar-footer {
+    right: 10px;
+    left: 10px;
+    justify-content: center;
+  }
+
+  .sidebar:not(.sidebar--collapsed) .sidebar-footer {
+    justify-content: flex-start;
+  }
+
+  .topbar {
+    height: 66px;
+    gap: 9px;
+    padding: 0 14px;
+  }
+
+  .update-status,
+  .profile-name {
+    display: none;
+  }
+
+  .profile {
+    margin-left: 0;
+    padding-left: 10px;
+  }
+}

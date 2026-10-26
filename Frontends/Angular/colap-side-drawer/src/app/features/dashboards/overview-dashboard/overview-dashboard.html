@@ -1,0 +1,89 @@
+<section class="page-content" aria-labelledby="overview-title">
+  <header class="page-heading">
+    <div>
+      <span class="eyebrow">Executive overview</span>
+      <h1 id="overview-title">Good morning, team</h1>
+      <p>Here’s what’s happening across your business today.</p>
+    </div>
+    <span class="period-label">
+      <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+      Last 6 months
+    </span>
+  </header>
+
+  <div class="dashboard-grid">
+    <div class="kpi-grid">
+      <app-metric-card
+        label="Total revenue"
+        value="$482.6k"
+        change="+12.8% vs last period"
+        icon="payments"
+      />
+      <app-metric-card
+        label="Active customers"
+        value="2,840"
+        change="+8.2% vs last period"
+        icon="groups"
+      />
+      <app-metric-card
+        label="Conversion rate"
+        value="4.38%"
+        change="+0.6% vs last period"
+        icon="conversion_path"
+      />
+      <app-metric-card
+        label="Avg. order value"
+        value="$169.90"
+        change="+3.1% vs last period"
+        icon="shopping_bag"
+      />
+    </div>
+
+    <article class="panel span-8">
+      <div class="panel-heading">
+        <div>
+          <h2>Revenue overview</h2>
+          <p>Actual revenue compared with target, in thousands</p>
+        </div>
+        <span class="insight-badge">On track</span>
+      </div>
+      <div class="chart-body">
+        <app-line-chart
+          label="Monthly revenue and target line chart"
+          [options]="revenueOptions"
+        />
+      </div>
+    </article>
+
+    <article class="panel span-4">
+      <div class="panel-heading">
+        <div>
+          <h2>Revenue by channel</h2>
+          <p>Share of total revenue</p>
+        </div>
+      </div>
+      <div class="chart-body">
+        <app-donut-chart
+          label="Revenue share by sales channel donut chart"
+          [options]="channelOptions"
+        />
+      </div>
+    </article>
+
+    <article class="panel span-12">
+      <div class="panel-heading">
+        <div>
+          <h2>Regional performance</h2>
+          <p>Revenue by sales region, in thousands</p>
+        </div>
+        <span class="subtle-label">5 regions</span>
+      </div>
+      <div class="chart-body chart-body--short">
+        <app-bar-chart
+          label="Revenue by region bar chart"
+          [options]="regionOptions"
+        />
+      </div>
+    </article>
+  </div>
+</section>

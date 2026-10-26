@@ -1,0 +1,40 @@
+.period-label,
+.insight-badge,
+.subtle-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.period-label {
+  min-height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.period-label .material-symbols-outlined {
+  font-size: 18px;
+}
+
+.insight-badge {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #edf8f2;
+  color: var(--success);
+}
+
+.chart-body--short {
+  height: 260px;
+}
+
+@media (max-width: 560px) {
+  .page-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
