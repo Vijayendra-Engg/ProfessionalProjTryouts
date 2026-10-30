@@ -4,13 +4,9 @@
       <h2 id="location-map-title">Nearby locations</h2>
       <p>Sample sites are classified by distance from the current pin.</p>
     </div>
-    <button
-      mat-flat-button
-      type="button"
-      class="location-button"
+    <button mat-flat-button type="button" class="location-button"
       [disabled]="locationState() === 'locating'"
-      (click)="requestCurrentLocation()"
-    >
+      (click)="requestCurrentLocation()">
       <span class="material-symbols-outlined" aria-hidden="true">
         {{ locationState() === 'locating' ? 'progress_activity' : 'my_location' }}
       </span>
@@ -18,12 +14,8 @@
     </button>
   </div>
 
-  <p
-    class="location-message"
-    [class.location-message--live]="locationState() === 'live'"
-    role="status"
-    aria-live="polite"
-  >
+  <p class="location-message" [class.location-message--live]="locationState() === 'live'"
+    role="status" aria-live="polite">
     <span class="material-symbols-outlined" aria-hidden="true">
       {{ locationState() === 'live' ? 'verified_user' : 'info' }}
     </span>
