@@ -7,12 +7,10 @@
   </div>
   <p class="metric-value">{{ value() }}</p>
   <p class="metric-change">
-    <span
-      class="change-indicator"
+    <span class="change-indicator"
       [class.change-indicator--positive]="positive()"
       [class.change-indicator--negative]="!positive()"
-      aria-hidden="true"
-    >
+      aria-hidden="true">
       <span class="material-symbols-outlined">
         {{ positive() ? 'trending_up' : 'trending_down' }}
       </span>
