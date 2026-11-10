@@ -10,7 +10,7 @@
     <PackageReference Include="ErrorOr" Version="2.1.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.14" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.14" />
-    <PackageReference Include="Microsoft.SemanticKernel.Abstractions" Version="1.81.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Abstractions" Version="1.82.0" />
   </ItemGroup>
 
   <ItemGroup>
